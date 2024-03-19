@@ -40,6 +40,11 @@ function inscore () {
     score.textContent = scoreNum
 }
 
+function ress() {
+    score.textContent = 0
+}
+reset.onclick = ress
+
 function check() {
     function randomNum (min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min; }
