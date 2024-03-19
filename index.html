@@ -40,10 +40,6 @@ function inscore () {
     score.textContent = scoreNum
 }
 
-function ress() {
-    score.textContent = 0
-}
-reset.onclick = ress
 
 function check() {
     function randomNum (min, max) {
@@ -75,6 +71,11 @@ input.addEventListener('keypress', function(event) {
         check()
     }
 })
+
+function ress() {
+    score.innerHTML = 0
+}
+reset.onclick = ress
 
 </script>
 </html>
