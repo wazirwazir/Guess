@@ -9,7 +9,7 @@
 <body>
     <div class="wrapper">
         <h1>Guess The Hidden Number</h1>
-        <p class="commenter" id="comment">Pick a number between 1 and 10</p>
+        <p class="commenter" id="comment">Pick a number between 1 to 5</p>
         
         <p>Hidden number: <span id="hiddenNum"></span></p>
         <input type="number" placeholder="Guess" id="input">
@@ -44,7 +44,7 @@ function inscore () {
 function check() {
     function randomNum (min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min; }
-        rady = randomNum(1, 10);
+        rady = randomNum(1, 5);
     
     if (input.value == rady) {
         comment.innerHTML = winmsg
@@ -52,7 +52,7 @@ function check() {
         input.style.borderColor = 'blue';
         input.style.outlineColor = 'blue';
     }
-    else if (input.value > 10 || input.value < 1) {
+    else if (input.value > 5 || input.value < 1) {
         comment.innerHTML = 'Pick only between 1 and 10';
         input.style.borderColor = 'red';
         input.style.outlineColor = 'red';
