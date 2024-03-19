@@ -1,0 +1,49 @@
+body {
+    background: radial-gradient(rgb(34, 34, 231), rgb(60, 8, 109));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding: 20px;
+}
+.wrapper {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: grey;
+    box-shadow: 0 0 50px 20px rgb(41, 40, 40);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(21, 100, 202, 0.753);
+}
+button {
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(8, 7, 59);
+    display: block;
+    margin: 1em auto;
+    box-shadow:0 5px 50px 3px rgb(23, 23, 73);
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+button:hover {
+    background-color: rgb(43, 137, 226);
+}
+p {
+    font-size: 1.5em;
+}
+.commenter {
+    margin-bottom: 4em;
+    
+}
+input {
+    border: 1px solid blue;
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 2em;
+    padding-left: 10px;
+}
